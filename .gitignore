@@ -40,6 +40,7 @@ zig-out/
 
 # Grammar volatiles
 *.wasm
+!docs/tree-sitter-pharo.wasm
 *.obj
 *.o
 
