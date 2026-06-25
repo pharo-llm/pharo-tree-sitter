@@ -1,0 +1,37 @@
+name: Publish to GitHub Packages
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish-github-packages:
+    runs-on: macos-14
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Build package
+        run: |
+          python -m pip install --upgrade build twine
+          rm -rf dist build *.egg-info bindings/python/*.egg-info
+          python -m build
+          python -m twine check dist/*
+
+      - name: Publish to GitHub Packages
+        env:
+          TWINE_USERNAME: ${{ github.actor }}
+          TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python -m twine upload \
+            --repository-url https://upload.pypi.pkg.github.com/pharo-llm/ \
+            dist/*
