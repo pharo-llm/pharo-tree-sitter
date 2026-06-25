@@ -1,21 +1,22 @@
 """Pharo grammar for tree-sitter"""
 
 from importlib.resources import files as _files
+from pathlib import Path as _Path
 
 from ._binding import language
 
 
 def _get_query(name, file):
-    query = _files(f"{__package__}.queries") / file
+    query = _files(__package__) / "queries" / file
+    if not query.is_file():
+        query = _Path(__file__).resolve().parents[3] / "queries" / file
     globals()[name] = query.read_text()
     return globals()[name]
 
 
 def __getattr__(name):
-    # NOTE: uncomment these to include any queries that this grammar contains:
-
-    # if name == "HIGHLIGHTS_QUERY":
-    #     return _get_query("HIGHLIGHTS_QUERY", "highlights.scm")
+    if name == "HIGHLIGHTS_QUERY":
+        return _get_query("HIGHLIGHTS_QUERY", "highlights.scm")
     # if name == "INJECTIONS_QUERY":
     #     return _get_query("INJECTIONS_QUERY", "injections.scm")
     # if name == "LOCALS_QUERY":
@@ -28,7 +29,7 @@ def __getattr__(name):
 
 __all__ = [
     "language",
-    # "HIGHLIGHTS_QUERY",
+    "HIGHLIGHTS_QUERY",
     # "INJECTIONS_QUERY",
     # "LOCALS_QUERY",
     # "TAGS_QUERY",

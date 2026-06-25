@@ -3,9 +3,9 @@ from platform import system
 from sysconfig import get_config_var
 
 from setuptools import Extension, find_packages, setup
+from setuptools.command.bdist_wheel import bdist_wheel
 from setuptools.command.build import build
 from setuptools.command.egg_info import egg_info
-from wheel.bdist_wheel import bdist_wheel
 
 sources = [
     "bindings/python/tree_sitter_pharo/binding.c",

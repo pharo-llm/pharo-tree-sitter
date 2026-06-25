@@ -2,12 +2,12 @@
 name = "tree-sitter-pharo"
 description = "Pharo grammar for tree-sitter"
 version = "0.1.0"
-authors = ["Kilian Kier <kierkilian@gmail.com>"]
+authors = ["pharo-llm <pharo-llm@pharo.org"]
 license = "MIT"
 readme = "README.md"
 keywords = ["incremental", "parsing", "tree-sitter", "pharo"]
 categories = ["parser-implementations", "parsing", "text-editors"]
-repository = "https://github.com/kilian-kier/tree-sitter-pharo"
+repository = "https://github.com/pharo-llm/pharo-tree-sitter"
 edition = "2021"
 autoexamples = false
 

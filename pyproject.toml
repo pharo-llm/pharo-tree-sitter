@@ -1,9 +1,9 @@
 [build-system]
-requires = ["setuptools>=62.4.0", "wheel"]
+requires = ["setuptools>=77.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tree-sitter-pharo"
+name = "pharo-tree-sitter"
 description = "Pharo grammar for tree-sitter"
 version = "0.1.0"
 keywords = ["incremental", "parsing", "tree-sitter", "pharo"]
@@ -15,14 +15,16 @@ classifiers = [
 ]
 authors = [{ name = "Kilian Kier", email = "kierkilian@gmail.com" }]
 requires-python = ">=3.10"
-license.text = "MIT"
+license = "MIT"
+license-files = ["LICENSE"]
 readme = "README.md"
+dependencies = ["tree-sitter~=0.24"]
 
 [project.urls]
 Homepage = "https://github.com/kilian-kier/tree-sitter-pharo"
 
 [project.optional-dependencies]
-core = ["tree-sitter~=0.24"]
+core = []
 
 [tool.cibuildwheel]
 build = "cp310-*"

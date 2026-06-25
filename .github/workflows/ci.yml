@@ -39,13 +39,15 @@ jobs:
       - name: Install Python package
         run: |
           python -m pip install --upgrade pip
-          python -m pip install ".[core]"
+          python -m pip install .
       - name: Generate Tonel method fixtures
         run: python scripts/tonel_to_methods.py --fail-on-skip
       - name: Ensure generated fixtures are committed
         run: git diff --exit-code -- test/corpus/tonel_methods.txt
       - name: Set up tree-sitter
         uses: tree-sitter/setup-action/cli@v2
+        with:
+          tree-sitter-ref: v0.26.9
       - name: Run tests
         uses: tree-sitter/parser-test-action@v2
         with:

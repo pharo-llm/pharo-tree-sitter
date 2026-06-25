@@ -10,3 +10,6 @@ class TestLanguage(TestCase):
             tree_sitter.Language(tree_sitter_pharo.language())
         except Exception:
             self.fail("Error loading Pharo grammar")
+
+    def test_can_load_highlights_query(self):
+        self.assertIn("@keyword", tree_sitter_pharo.HIGHLIGHTS_QUERY)
