@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tree-sitter Pharo Playground</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <header>
+      <h1>Tree‑sitter Pharo Playground</h1>
+      <div class="controls">
+        <label>Grammar WASM:
+          <input id="wasmPath" type="text" placeholder="tree-sitter-pharo.wasm" />
+        </label>
+        <button id="loadGrammar">Load grammar</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="editor-pane">
+        <div class="pane-header">Editor
+          &nbsp;
+          <div class="toolbar">
+          <button id="parseBtn" disabled>Parse (Ctrl/Cmd+Enter)</button>
+          <label><input id="liveParse" type="checkbox" checked /> Live parse</label>
+        </div></div>
+
+        <textarea id="code" spellcheck="false" placeholder="' Type (or paste) Pharo code here…"></textarea>
+
+        <details>
+          <summary>Run a Tree-sitter query</summary>
+          <textarea id="query" spellcheck="false" placeholder="(method) @cap"></textarea>
+          <button id="runQuery" disabled>Run query</button>
+          <pre id="queryOut" class="panel"></pre>
+        </details>
+      </section>
+
+      <section class="tree-pane">
+        <div class="pane-header">Syntax tree</div>
+        <div id="tree" class="panel"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Powered by <a href="https://www.npmjs.com/package/web-tree-sitter" target="_blank" rel="noreferrer">web-tree-sitter</a>.</p>
+    </footer>
+
+    <!-- web-tree-sitter runtime from CDN -->
+    <script type="module" src="https://unpkg.com/web-tree-sitter@0.25.8/tree-sitter.js"></script>
+    <script type="module" src="playground.js"></script>
+  </body>
+</html>

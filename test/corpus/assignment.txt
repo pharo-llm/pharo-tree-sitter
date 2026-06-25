@@ -1,0 +1,140 @@
+================================================================================
+Assignment to Primary
+================================================================================
+test
+
+    abc := def
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (assignment
+          (identifier)
+          (identifier))))))
+
+================================================================================
+Assignment to Binary Message
+================================================================================
+test
+
+    abc := def + ghi
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (assignment
+          (identifier)
+          (binary_message
+            (identifier)
+            (binary_operator)
+            (identifier)))))))
+
+================================================================================
+Nested Assignments
+================================================================================
+test
+
+    abc := def := ghi
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (assignment
+          (identifier)
+          (assignment
+            (identifier)
+            (identifier)))))))
+
+================================================================================
+Assignment to Keyword Message
+================================================================================
+test
+
+    abc := def do: ghi with: jkl
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (assignment
+          (identifier)
+          (keyword_message
+            (identifier)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))))))
+
+================================================================================
+Assignment in Keyword Message
+================================================================================
+test
+
+    abc do: (a := test)
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (keyword_message
+          (identifier)
+          (keyword)
+          (parenthesized_expression
+            (assignment
+              (identifier)
+              (identifier))))))))
+
+================================================================================
+Assignment no space
+================================================================================
+test
+
+    abc:=def
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (assignment
+          (identifier)
+          (identifier))))))
+
+================================================================================
+Assignment after keyword method declaration
+================================================================================
+a: arg
+  x:= a
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (keyword_selector
+      (keyword)
+      (identifier))
+    (method_body
+      (statement
+        (assignment
+          (identifier)
+          (identifier))))))
+

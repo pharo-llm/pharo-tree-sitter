@@ -1,0 +1,37 @@
+================================================================================
+Single-line Comment
+================================================================================
+highlightQuery
+	" https://github.com/kilian-kier/tree-sitter-pharo/blob/main/src/queries/highlights.scm "
+
+	123
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (comment)
+    (method_body
+      (statement
+        (number)))))
+
+================================================================================
+Multi-line Comment
+================================================================================
+highlightQuery
+	123. "a
+b
+c" 234
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (number))
+      (comment)
+      (statement
+        (number)))))

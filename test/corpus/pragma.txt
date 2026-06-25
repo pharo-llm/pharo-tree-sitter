@@ -1,0 +1,61 @@
+=================
+Simple pragma
+=================
+test
+
+    <abc>
+---
+
+(source
+  (method
+    (unary_selector (unary_identifier))
+    (method_body
+      (pragma (pragma_unary_selector (unary_identifier))))))
+
+=================
+Keyword pragma
+=================
+test
+
+    <abc: 12 def: #(test abc) hello: 'a'>
+---
+
+(source
+  (method
+    (unary_selector (unary_identifier))
+    (method_body
+      (pragma (pragma_keyword_selector
+          (keyword) (number)
+          (keyword) (literal_array (symbol) (symbol))
+          (keyword) (string))))))
+
+=================
+Multiple pragmas
+=================
+openExplorer
+	<convert>
+	<convertPriority: -1>
+---
+
+(source
+  (method
+    (unary_selector (unary_identifier))
+    (method_body
+      (pragma (pragma_unary_selector (unary_identifier)))
+      (pragma (pragma_keyword_selector (keyword) (number))))))
+
+=================
+Temporaries after pragmas
+=================
+openExplorer
+	<convertPriority>
+	| a |
+---
+
+(source
+  (method
+    (unary_selector (unary_identifier))
+    (method_body
+      (pragma (pragma_unary_selector (unary_identifier)))
+      (temporaries (identifier)))))
+

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "pharo",
+      "camelcase": "Pharo",
+      "title": "Pharo",
+      "scope": "source.pharo",
+      "file-types": [
+        "st"
+      ],
+      "injection-regex": "^pharo$",
+      "class-name": "TreeSitterPharo"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Pharo grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Kilian Kier",
+        "email": "kierkilian@gmail.com",
+        "url": "https://github.com/kilian-kier/"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/kilian-kier/tree-sitter-pharo"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}

@@ -1,0 +1,248 @@
+================================================================================
+Block with one statement
+================================================================================
+test
+
+    [a]
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (block
+          (statement
+            (identifier)))))))
+
+================================================================================
+Block with arguments
+================================================================================
+test
+
+    [:a :b | a]
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (block
+          (block_argument)
+          (block_argument)
+          (statement
+            (identifier)))))))
+
+================================================================================
+Block with arguments and temporaries
+================================================================================
+test
+
+    [:a :b | |a b| a]
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (block
+          (block_argument)
+          (block_argument)
+          (temporaries
+            (identifier)
+            (identifier))
+          (statement
+            (identifier)))))))
+
+================================================================================
+Block with temporaries
+================================================================================
+test
+
+    [|a b| a]
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (block
+          (temporaries
+            (identifier)
+            (identifier))
+          (statement
+            (identifier)))))))
+
+================================================================================
+Block with temporaries and pipe operator
+================================================================================
+test
+
+    [|a b| a | b]
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (block
+          (temporaries
+            (identifier)
+            (identifier))
+          (statement
+            (binary_message
+              (identifier)
+              (binary_operator)
+              (identifier))))))))
+
+================================================================================
+Block with multiple statements
+================================================================================
+test
+
+    [a. b. c.]
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (block
+          (statement
+            (identifier))
+          (statement
+            (identifier))
+          (statement
+            (identifier)))))))
+
+================================================================================
+Block argument with number
+================================================================================
+test
+
+    [:a2 :b | a]
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (block
+          (block_argument)
+          (block_argument)
+          (statement
+            (identifier)))))))
+
+================================================================================
+Block argument with space
+================================================================================
+test
+
+    [: a2 :  b | a]
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (block
+          (block_argument)
+          (block_argument)
+          (statement
+            (identifier)))))))
+
+================================================================================
+Multiple dots between statements
+================================================================================
+testFor: aCollection
+    aCollection do: [ :lineSeg |
+        | rObj |
+        
+        rObj := lineSeg asRenderableElement color: Color blue...
+        
+        lineSeg isFrontier ifTrue: [
+          rObj dashStyle: #( "fill" 0.05 "gap" 0.05)....
+        ]...
+        
+        renderCollection add: (rObj).
+    ].
+--------------------------------------------------------------------------------
+(source
+  (method
+    (keyword_selector
+      (keyword)
+      (identifier))
+    (method_body
+      (statement
+        (keyword_message
+          (identifier)
+          (keyword)
+          (block
+            (block_argument)
+            (temporaries
+              (identifier))
+            (statement
+              (assignment
+                (identifier)
+                (keyword_message
+                  (unary_message
+                    (identifier)
+                    (unary_identifier))
+                  (keyword)
+                  (unary_message
+                    (identifier)
+                    (unary_identifier)))))
+            (statement
+              (keyword_message
+                (unary_message
+                  (identifier)
+                  (unary_identifier))
+                (keyword)
+                (block
+                  (statement
+                    (keyword_message
+                      (identifier)
+                      (keyword)
+                      (literal_array
+                        (comment)
+                        (number)
+                        (comment)
+                        (number)))))))
+            (statement
+              (keyword_message
+                (identifier)
+                (keyword)
+                (parenthesized_expression
+                  (identifier))))))))))
+
+================================================================================
+Block without statements
+================================================================================
+test
+
+    [ :e ]
+--------------------------------------------------------------------------------
+
+(source
+  (method
+    (unary_selector
+      (unary_identifier))
+    (method_body
+      (statement
+        (block
+          (block_argument))))))

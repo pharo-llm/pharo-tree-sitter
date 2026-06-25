@@ -1,0 +1,3965 @@
+================================================================================
+Instance Method Tonel File
+================================================================================
+Class {
+    #name : #MyClass,
+    #superclass : #Object,
+    #category : 'MyCategory',
+    #package : 'MyPackage'
+}
+
+{ #category : #accessing }
+MyClass >> foo [
+    ^ 1
+]
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (string))
+        (class_header_pair
+          (ston_key)
+          (string))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (statement
+          (return
+            (number)))))))
+
+================================================================================
+Instance Method Tonel File
+================================================================================
+Class {
+	#name : #ObjCSpecParserTest,
+	#superclass : #TestCase,
+	#instVars : [
+		'parser'
+	],
+	#category : #Objective-C-Tests
+}
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (ston_array
+            (ston_value
+              (string))))
+        (class_header_pair
+          (ston_key)
+          (dashed_symbol))))))
+================================================================================
+Instance Method Tonel File with symbol method meta
+================================================================================
+Class {
+    #name : #MyClass,
+    #superclass : #Object,
+    #category : 'MyCategory',
+    #package : 'MyPackage'
+}
+
+{ #category : #'not accessing' }
+MyClass >> foo [
+    ^ 1
+]
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (string))
+        (class_header_pair
+          (ston_key)
+          (string))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol
+              (string)))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (statement
+          (return
+            (number)))))))
+================================================================================
+Class Method Tonel File
+================================================================================
+Class {
+    #name : #MyClass,
+    #superclass : #Object,
+    #category : 'MyCategory',
+    #package : 'MyPackage'
+}
+
+{ #category : #accessing }
+MyClass class >> bar [
+    ^ 2
+]
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (string))
+        (class_header_pair
+          (ston_key)
+          (string))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (class_keyword)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (statement
+          (return
+            (number)))))))
+
+================================================================================
+Empty body
+================================================================================
+Class {
+    #name : #MyClass,
+    #superclass : #Object,
+    #category : 'MyCategory',
+    #package : 'MyPackage'
+}
+
+{ #category : #accessing }
+MyClass >> foo [
+]
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (string))
+        (class_header_pair
+          (ston_key)
+          (string))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier))))))
+
+================================================================================
+Pragma only body
+================================================================================
+Class {
+    #name : #MyClass,
+    #superclass : #Object,
+    #category : 'MyCategory',
+    #package : 'MyPackage'
+}
+
+{ #category : #accessing }
+MyClass >> primitiveFoo [
+    <primitive: 'foo'>
+]
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (string))
+        (class_header_pair
+          (ston_key)
+          (string))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (pragma
+          (pragma_keyword_selector
+            (keyword)
+            (string)))))))
+
+================================================================================
+Temps only body
+================================================================================
+Class {
+    #name : #MyClass,
+    #superclass : #Object,
+    #category : 'MyCategory',
+    #package : 'MyPackage'
+}
+
+{ #category : #accessing }
+MyClass >> foo [
+    | this that |
+]
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (string))
+        (class_header_pair
+          (ston_key)
+          (string))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier)
+          (identifier))))))
+
+================================================================================
+Package file
+================================================================================
+Package { #name : #'GeoSphere-Model' }
+--------------------------------------------------------------------------------
+(source
+  (package_file
+    (package_definition
+      (package_data
+        (ston_key)
+        (symbol
+          (string))))))
+
+================================================================================
+Package file dashed symbol
+================================================================================
+Package { #name : #ObjectiveC-Tests }
+--------------------------------------------------------------------------------
+(source
+  (package_file
+    (package_definition
+      (package_data
+        (ston_key)
+        (dashed_symbol)))))
+
+================================================================================
+Real example #1 - ZTimestampPreciseSNTPClient
+================================================================================
+"
+I am ZTimestampPreciseSNTPClient.
+I am a ZTimestampSNTPClient.
+
+I use DataAndTime with theoretical nanosecond precision.
+
+I can be used to verify the current clock.
+
+	ZTimestampPreciseSNTPClient new clockDifference.
+	
+	ZTimestampPreciseSNTPClient new
+		enforceClockDifference: 2 seconds
+		ifFail: [ :delta | 
+			self inform: ('Clock difference {1} > 2s' format: { delta }) ];
+		close. 
+		
+	ZTimestampPreciseSNTPClient logClockDifferenceLargerThan: 1 second.
+
+Normally this difference should be just just fractions of a second. If not, make sure your computer's clock itself is properly synchronized.
+"
+Class {
+	#name : #ZTimestampPreciseSNTPClient,
+	#superclass : #ZTimestampSNTPClient,
+	#category : #ZTimestamp
+}
+
+{ #category : #accessing }
+ZTimestampPreciseSNTPClient >> now [
+	^ DateAndTime now asUTC
+]
+
+{ #category : #accessing }
+ZTimestampPreciseSNTPClient >> ntpEpoch [
+	^ DateAndTime year: 1900 month: 1 day: 1 hour: 0 minute: 0 second: 0 offset: Duration zero
+]
+
+{ #category : #private }
+ZTimestampPreciseSNTPClient >> timestampFromSeconds: seconds fraction: fraction [
+	^ self ntpEpoch + seconds seconds + (fraction * (10 raisedToInteger: 9)) nanoSeconds 
+]
+--------------------------------------------------------------------------------
+(source
+  (source_file
+        (comment)
+        (class_definition
+          (type)
+          (class_header
+            (class_header_pair
+              (ston_key)
+              (symbol))
+            (class_header_pair
+              (ston_key)
+              (symbol))
+            (class_header_pair
+              (ston_key)
+              (symbol))))
+        (method_definition
+          (method_metadata
+            (method_metadata_object
+              (method_metadata_pair
+                (ston_key)
+                (symbol))))
+          (method_header
+            (identifier)
+            (unary_selector
+              (unary_identifier)))
+          (method_body
+            (statement
+              (return
+                (unary_message
+                  (unary_message
+                    (identifier)
+                    (unary_identifier))
+                  (unary_identifier))))))
+        (method_definition
+          (method_metadata
+            (method_metadata_object
+              (method_metadata_pair
+                (ston_key)
+                (symbol))))
+          (method_header
+            (identifier)
+            (unary_selector
+              (unary_identifier)))
+          (method_body
+            (statement
+              (return
+                (keyword_message
+                  (identifier)
+                  (keyword)
+                  (number)
+                  (keyword)
+                  (number)
+                  (keyword)
+                  (number)
+                  (keyword)
+                  (number)
+                  (keyword)
+                  (number)
+                  (keyword)
+                  (number)
+                  (keyword)
+                  (unary_message
+                    (identifier)
+                    (unary_identifier)))))))
+        (method_definition
+          (method_metadata
+            (method_metadata_object
+              (method_metadata_pair
+                (ston_key)
+                (symbol))))
+          (method_header
+            (identifier)
+            (keyword_selector
+              (keyword)
+              (identifier)
+              (keyword)
+              (identifier)))
+          (method_body
+            (statement
+              (return
+                (binary_message
+                  (binary_message
+                    (unary_message
+                      (self)
+                      (unary_identifier))
+                    (binary_operator)
+                    (unary_message
+                      (identifier)
+                      (unary_identifier)))
+                  (binary_operator)
+                  (unary_message
+                    (parenthesized_expression
+                      (binary_message
+                        (identifier)
+                        (binary_operator)
+                        (parenthesized_expression
+                          (keyword_message
+                            (number)
+                            (keyword)
+                            (number)))))
+                    (unary_identifier)))))))))
+
+================================================================================
+Real example #2 - DruidCogit
+================================================================================
+Class {
+	#name : 'DruidCogit',
+	#superclass : 'Cogit',
+	#category : 'Druid-Tests',
+	#package : 'Druid-Tests'
+}
+
+{ #category : 'configuration' }
+DruidCogit class >> initializeBytecodeTableForSistaV1 [
+	
+	"Do nothing for now"
+]
+
+{ #category : 'configuration' }
+DruidCogit class >> initializePrimitiveTable [
+	
+	"Do nothing for now"
+]
+
+{ #category : 'simulation only' }
+DruidCogit >> bytecodeFixupClass [
+	<doNotGenerate>
+	^CogBytecodeFixup
+]
+
+{ #category : 'garbage' }
+DruidCogit >> entryOffset: anInteger [ 
+	
+	"Nothing"
+]
+
+{ #category : 'garbage' }
+DruidCogit >> forCogit: aDruidCogit methodZone: aCogMethodZone [ 
+	
+	^ objectMemory 
+]
+
+{ #category : 'generated' }
+DruidCogit >> genPrimitiveAdd [
+
+	| currentBlock jump0 jump1 jump2 |
+	self TstCq: 1 R: Arg0Reg.
+	jump0 := self JumpZero: 0.
+	self TstCq: 1 R: ReceiverResultReg.
+	jump1 := self JumpZero: 0.
+	self MoveR: Arg0Reg R: Extra1Reg.
+	self SubCq: 1 R: Extra1Reg.
+	self MoveR: Extra1Reg R: Extra2Reg.
+	self AddR: ReceiverResultReg R: Extra2Reg.
+	jump2 := self JumpOverflow: 0.
+	self MoveR: Extra2Reg R: ReceiverResultReg.
+	self RetN: 2 * objectMemory wordSize.
+	currentBlock := self Label.
+	jump0 jmpTarget: currentBlock.
+	jump1 jmpTarget: currentBlock.
+	jump2 jmpTarget: currentBlock.
+	^ CompletePrimitive
+]
+
+{ #category : 'generated' }
+DruidCogit >> genPrimitiveEqual [
+
+	| currentBlock jump0 jump1 jump2 jump3 jump4 |
+	self MoveR: ReceiverResultReg R: TempReg.
+	self MoveR: TempReg R: ClassReg.
+	self AndR: Arg0Reg R: ClassReg.
+	self TstCq: 1 R: ClassReg.
+	self MoveR: Arg0Reg R: Extra3Reg.
+	self MoveR: ReceiverResultReg R: Extra4Reg.
+	jump0 := self JumpZero: 0.
+	self CmpR: Arg0Reg R: TempReg.
+	jump1 := self JumpZero: 0.
+	jump2 := self JumpNonZero: 0.
+	currentBlock := self Label.
+	jump0 jmpTarget: currentBlock.
+	self MoveR: Extra3Reg R: Arg0Reg.
+	self MoveR: Extra4Reg R: ReceiverResultReg.
+	jump3 := self Jump: 0.
+	currentBlock := self Label.
+	jump1 jmpTarget: currentBlock.
+	self MoveCw: objectMemory trueObject R: ClassReg.
+	self MoveR: ClassReg R: TempReg.
+	jump4 := self Jump: 0.
+	currentBlock := self Label.
+	jump2 jmpTarget: currentBlock.
+	self MoveCw: objectMemory falseObject R: SendNumArgsReg.
+	self MoveR: SendNumArgsReg R: TempReg.
+	currentBlock := self Label.
+	jump4 jmpTarget: currentBlock.
+	self MoveR: TempReg R: ReceiverResultReg.
+	self RetN: 2 * objectMemory wordSize.
+	currentBlock := self Label.
+	jump3 jmpTarget: currentBlock.
+	^ CompletePrimitive
+]
+
+{ #category : 'generated' }
+DruidCogit >> genPrimitiveGreaterOrEqual [
+
+	| currentBlock jump0 jump1 jump2 jump3 jump4 |
+	self MoveR: ReceiverResultReg R: TempReg.
+	self MoveR: TempReg R: ClassReg.
+	self AndR: Arg0Reg R: ClassReg.
+	self TstCq: 1 R: ClassReg.
+	self MoveR: Arg0Reg R: Extra3Reg.
+	self MoveR: ReceiverResultReg R: Extra4Reg.
+	jump0 := self JumpZero: 0.
+	self CmpR: Arg0Reg R: TempReg.
+	jump1 := self JumpGreaterOrEqual: 0.
+	jump2 := self JumpLess: 0.
+	currentBlock := self Label.
+	jump0 jmpTarget: currentBlock.
+	self MoveR: Extra3Reg R: Arg0Reg.
+	self MoveR: Extra4Reg R: ReceiverResultReg.
+	jump3 := self Jump: 0.
+	currentBlock := self Label.
+	jump1 jmpTarget: currentBlock.
+	self MoveCw: objectMemory trueObject R: ClassReg.
+	self MoveR: ClassReg R: TempReg.
+	jump4 := self Jump: 0.
+	currentBlock := self Label.
+	jump2 jmpTarget: currentBlock.
+	self MoveCw: objectMemory falseObject R: Extra0Reg.
+	self MoveR: Extra0Reg R: TempReg.
+	currentBlock := self Label.
+	jump4 jmpTarget: currentBlock.
+	self MoveR: TempReg R: ReceiverResultReg.
+	self RetN: 2 * objectMemory wordSize.
+	currentBlock := self Label.
+	jump3 jmpTarget: currentBlock.
+	^ CompletePrimitive
+]
+
+{ #category : 'generated' }
+DruidCogit >> genPrimitiveGreaterThan [
+
+	| currentBlock jump0 jump1 jump2 jump3 jump4 |
+	self MoveR: ReceiverResultReg R: TempReg.
+	self MoveR: TempReg R: ClassReg.
+	self AndR: Arg0Reg R: ClassReg.
+	self TstCq: 1 R: ClassReg.
+	self MoveR: Arg0Reg R: Extra3Reg.
+	self MoveR: ReceiverResultReg R: Extra4Reg.
+	jump0 := self JumpZero: 0.
+	self CmpR: Arg0Reg R: TempReg.
+	jump1 := self JumpGreater: 0.
+	jump2 := self JumpLessOrEqual: 0.
+	currentBlock := self Label.
+	jump0 jmpTarget: currentBlock.
+	self MoveR: Extra3Reg R: Arg0Reg.
+	self MoveR: Extra4Reg R: ReceiverResultReg.
+	jump3 := self Jump: 0.
+	currentBlock := self Label.
+	jump1 jmpTarget: currentBlock.
+	self MoveCw: objectMemory trueObject R: ClassReg.
+	self MoveR: ClassReg R: TempReg.
+	jump4 := self Jump: 0.
+	currentBlock := self Label.
+	jump2 jmpTarget: currentBlock.
+	self MoveCw: objectMemory falseObject R: SendNumArgsReg.
+	self MoveR: SendNumArgsReg R: TempReg.
+	currentBlock := self Label.
+	jump4 jmpTarget: currentBlock.
+	self MoveR: TempReg R: ReceiverResultReg.
+	self RetN: 2 * objectMemory wordSize.
+	currentBlock := self Label.
+	jump3 jmpTarget: currentBlock.
+	^ CompletePrimitive
+]
+
+{ #category : 'generated' }
+DruidCogit >> genPrimitiveLessOrEqual [
+
+	| currentBlock jump0 jump1 jump2 jump3 jump4 |
+	self MoveR: ReceiverResultReg R: TempReg.
+	self MoveR: TempReg R: ClassReg.
+	self AndR: Arg0Reg R: ClassReg.
+	self TstCq: 1 R: ClassReg.
+	self MoveR: Arg0Reg R: Extra3Reg.
+	self MoveR: ReceiverResultReg R: Extra4Reg.
+	jump0 := self JumpZero: 0.
+	self CmpR: Arg0Reg R: TempReg.
+	jump1 := self JumpLessOrEqual: 0.
+	jump2 := self JumpGreater: 0.
+	currentBlock := self Label.
+	jump0 jmpTarget: currentBlock.
+	self MoveR: Extra3Reg R: Arg0Reg.
+	self MoveR: Extra4Reg R: ReceiverResultReg.
+	jump3 := self Jump: 0.
+	currentBlock := self Label.
+	jump1 jmpTarget: currentBlock.
+	self MoveCw: objectMemory trueObject R: ClassReg.
+	self MoveR: ClassReg R: TempReg.
+	jump4 := self Jump: 0.
+	currentBlock := self Label.
+	jump2 jmpTarget: currentBlock.
+	self MoveCw: objectMemory falseObject R: Extra0Reg.
+	self MoveR: Extra0Reg R: TempReg.
+	currentBlock := self Label.
+	jump4 jmpTarget: currentBlock.
+	self MoveR: TempReg R: ReceiverResultReg.
+	self RetN: 2 * objectMemory wordSize.
+	currentBlock := self Label.
+	jump3 jmpTarget: currentBlock.
+	^ CompletePrimitive
+]
+
+{ #category : 'generated' }
+DruidCogit >> genPrimitiveLessThan [
+
+	| currentBlock jump0 jump1 jump2 jump3 jump4 |
+	self MoveR: ReceiverResultReg R: TempReg.
+	self MoveR: TempReg R: ClassReg.
+	self AndR: Arg0Reg R: ClassReg.
+	self TstCq: 1 R: ClassReg.
+	self MoveR: Arg0Reg R: Extra3Reg.
+	self MoveR: ReceiverResultReg R: Extra4Reg.
+	jump0 := self JumpZero: 0.
+	self CmpR: Arg0Reg R: TempReg.
+	jump1 := self JumpLess: 0.
+	jump2 := self JumpGreaterOrEqual: 0.
+	currentBlock := self Label.
+	jump0 jmpTarget: currentBlock.
+	self MoveR: Extra3Reg R: Arg0Reg.
+	self MoveR: Extra4Reg R: ReceiverResultReg.
+	jump3 := self Jump: 0.
+	currentBlock := self Label.
+	jump1 jmpTarget: currentBlock.
+	self MoveCw: objectMemory trueObject R: ClassReg.
+	self MoveR: ClassReg R: TempReg.
+	jump4 := self Jump: 0.
+	currentBlock := self Label.
+	jump2 jmpTarget: currentBlock.
+	self MoveCw: objectMemory falseObject R: SendNumArgsReg.
+	self MoveR: SendNumArgsReg R: TempReg.
+	currentBlock := self Label.
+	jump4 jmpTarget: currentBlock.
+	self MoveR: TempReg R: ReceiverResultReg.
+	self RetN: 2 * objectMemory wordSize.
+	currentBlock := self Label.
+	jump3 jmpTarget: currentBlock.
+	^ CompletePrimitive
+]
+
+{ #category : 'generated' }
+DruidCogit >> genPrimitiveSubtract [
+
+	| currentBlock jump0 jump1 jump2 jump3 jump4 jump5 jump6 |
+	self MoveR: ReceiverResultReg R: TempReg.
+	self MoveR: Arg0Reg R: ClassReg.
+	self TstCq: 1 R: TempReg.
+	self MoveR: Arg0Reg R: Extra3Reg.
+	self MoveR: ReceiverResultReg R: Extra4Reg.
+	jump0 := self JumpZero: 0.
+	self TstCq: 1 R: ClassReg.
+	self MoveR: Arg0Reg R: Extra2Reg.
+	self MoveR: ReceiverResultReg R: Extra4Reg.
+	jump1 := self JumpZero: 0.
+	currentBlock := self Label.
+	jump0 jmpTarget: currentBlock.
+	self MoveR: Extra3Reg R: Arg0Reg.
+	self MoveR: Extra4Reg R: ReceiverResultReg.
+	jump2 := self Jump: 0.
+	self MoveR: TempReg R: SendNumArgsReg.
+	self SubR: ClassReg R: SendNumArgsReg.
+	self MoveR: SendNumArgsReg R: Extra0Reg.
+	self AddCq: 1 R: Extra0Reg.
+	self MoveR: Arg0Reg R: Extra3Reg.
+	self MoveR: ReceiverResultReg R: TempReg.
+	jump3 := self JumpOverflow: 0.
+	jump4 := self JumpNoOverflow: 0.
+	currentBlock := self Label.
+	jump1 jmpTarget: currentBlock.
+	self MoveR: Extra2Reg R: Arg0Reg.
+	self MoveR: Extra4Reg R: ReceiverResultReg.
+	jump5 := self Jump: 0.
+	currentBlock := self Label.
+	jump3 jmpTarget: currentBlock.
+	self MoveR: Extra3Reg R: Arg0Reg.
+	self MoveR: TempReg R: ReceiverResultReg.
+	jump6 := self Jump: 0.
+	currentBlock := self Label.
+	jump4 jmpTarget: currentBlock.
+	self MoveR: Extra0Reg R: ReceiverResultReg.
+	self RetN: 2 * objectMemory wordSize.
+	currentBlock := self Label.
+	jump2 jmpTarget: currentBlock.
+	jump5 jmpTarget: currentBlock.
+	jump6 jmpTarget: currentBlock.
+	^ CompletePrimitive
+]
+
+{ #category : 'garbage' }
+DruidCogit >> minCallAddress: anInteger [ 
+	
+	"Nothing"
+]
+
+{ #category : 'accessing' }
+DruidCogit >> objectRepresentationClass [
+
+	^ self
+]
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          key: (ston_key)
+          name: (string))
+        (class_header_pair
+          key: (ston_key)
+          superclass: (string))
+        (class_header_pair
+          key: (ston_key)
+          category: (string))
+        (class_header_pair
+          key: (ston_key)
+          package: (string))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (class_keyword)
+        (unary_selector
+          (unary_identifier)))
+      (comment))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (class_keyword)
+        (unary_selector
+          (unary_identifier)))
+      (comment))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (pragma
+          (pragma_unary_selector
+            (unary_identifier)))
+        (statement
+          (return
+            (identifier)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (keyword_selector
+          (keyword)
+          (identifier)))
+      (comment))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (keyword_selector
+          (keyword)
+          (identifier)
+          (keyword)
+          (identifier)))
+      (method_body
+        (statement
+          (return
+            (identifier)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (number)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (number)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (number)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (binary_message
+              receiver: (number)
+              (binary_operator)
+              (unary_message
+                receiver: (identifier)
+                (unary_identifier)))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (return
+            (identifier)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (number)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (unary_message
+              receiver: (identifier)
+              (unary_identifier))
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (unary_message
+              receiver: (identifier)
+              (unary_identifier))
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (binary_message
+              receiver: (number)
+              (binary_operator)
+              (unary_message
+                receiver: (identifier)
+                (unary_identifier)))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (return
+            (identifier)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (number)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (unary_message
+              receiver: (identifier)
+              (unary_identifier))
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (unary_message
+              receiver: (identifier)
+              (unary_identifier))
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (binary_message
+              receiver: (number)
+              (binary_operator)
+              (unary_message
+                receiver: (identifier)
+                (unary_identifier)))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (return
+            (identifier)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (number)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (unary_message
+              receiver: (identifier)
+              (unary_identifier))
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (unary_message
+              receiver: (identifier)
+              (unary_identifier))
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (binary_message
+              receiver: (number)
+              (binary_operator)
+              (unary_message
+                receiver: (identifier)
+                (unary_identifier)))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (return
+            (identifier)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (number)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (unary_message
+              receiver: (identifier)
+              (unary_identifier))
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (unary_message
+              receiver: (identifier)
+              (unary_identifier))
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (binary_message
+              receiver: (number)
+              (binary_operator)
+              (unary_message
+                receiver: (identifier)
+                (unary_identifier)))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (return
+            (identifier)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (number)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (unary_message
+              receiver: (identifier)
+              (unary_identifier))
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (unary_message
+              receiver: (identifier)
+              (unary_identifier))
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (binary_message
+              receiver: (number)
+              (binary_operator)
+              (unary_message
+                receiver: (identifier)
+                (unary_identifier)))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (return
+            (identifier)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (number)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (number)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (number)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (keyword_message
+              receiver: (self)
+              (keyword)
+              (number))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (self)
+            (keyword)
+            (binary_message
+              receiver: (number)
+              (binary_operator)
+              (unary_message
+                receiver: (identifier)
+                (unary_identifier)))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              receiver: (self)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (keyword_message
+            receiver: (identifier)
+            (keyword)
+            (identifier)))
+        (statement
+          (return
+            (identifier)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (keyword_selector
+          (keyword)
+          (identifier)))
+      (comment))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            key: (ston_key)
+            category: (string))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (statement
+          (return
+            (self)))))))
+
+================================================================================
+Real example #3 - GSCoordinates
+================================================================================
+Class {
+	#name : #GSCoordinates,
+	#superclass : #Object,
+	#instVars : [
+		'latitude',
+		'longitude'
+	],
+	#classVars : [
+		'EarthRadius'
+	],
+	#category : #'GeoSphere-Model'
+}
+
+{ #category : #printing }
+GSCoordinates class >> dms: aNumber labels: labelArray to: aStream [
+	"Write the supplied number (latitude or longitude) as Degrees Minutes Seconds on aStream.
+	The labelArray provides the identifer for Degrees, Minutes and Seconds"
+
+	| absNumber degrees minutes seconds |
+
+	absNumber := aNumber abs.
+	degrees := absNumber truncated.
+	minutes := ((absNumber - degrees) * 60) truncated.
+	seconds := ((absNumber - degrees - (minutes / 60)) * 3600) roundTo: 0.01.
+	aStream 
+		print: degrees;
+		<< labelArray first;
+		print: minutes;
+		<< labelArray second;
+		<< (seconds asFloat printShowingDecimalPlaces: 2);
+		<< labelArray third.
+]
+
+--------------------------------------------------------------------------------
+(source
+      (source_file
+        (class_definition
+          (type)
+          (class_header
+            (class_header_pair
+              (ston_key)
+              (symbol))
+            (class_header_pair
+              (ston_key)
+              (symbol))
+            (class_header_pair
+              (ston_key)
+              (ston_array
+                (ston_value
+                  (string))
+                (ston_value
+                  (string))))
+            (class_header_pair
+              (ston_key)
+              (ston_array
+                (ston_value
+                  (string))))
+            (class_header_pair
+              (ston_key)
+              (symbol
+                (string)))))
+        (method_definition
+          (method_metadata
+            (method_metadata_object
+              (method_metadata_pair
+                (ston_key)
+                (symbol))))
+          (method_header
+            (identifier)
+            (class_keyword)
+            (keyword_selector
+              (keyword)
+              (identifier)
+              (keyword)
+              (identifier)
+              (keyword)
+              (identifier)))
+          (comment)
+          (method_body
+            (temporaries
+              (identifier)
+              (identifier)
+              (identifier)
+              (identifier))
+            (statement
+              (assignment
+                (identifier)
+                (unary_message
+                  (identifier)
+                  (unary_identifier))))
+            (statement
+              (assignment
+                (identifier)
+                (unary_message
+                  (identifier)
+                  (unary_identifier))))
+            (statement
+              (assignment
+                (identifier)
+                (unary_message
+                  (parenthesized_expression
+                    (binary_message
+                      (parenthesized_expression
+                        (binary_message
+                          (identifier)
+                          (binary_operator)
+                          (identifier)))
+                      (binary_operator)
+                      (number)))
+                  (unary_identifier))))
+            (statement
+              (assignment
+                (identifier)
+                (keyword_message
+                  (parenthesized_expression
+                    (binary_message
+                      (parenthesized_expression
+                        (binary_message
+                          (binary_message
+                            (identifier)
+                            (binary_operator)
+                            (identifier))
+                          (binary_operator)
+                          (parenthesized_expression
+                            (binary_message
+                              (identifier)
+                              (binary_operator)
+                              (number)))))
+                      (binary_operator)
+                      (number)))
+                  (keyword)
+                  (number))))
+            (statement
+              (cascade
+                (keyword_message
+                  (identifier)
+                  (keyword)
+                  (identifier))
+                (cascaded_binary_message
+                  (binary_operator)
+                  (cascade
+                    (unary_message
+                      (identifier)
+                      (unary_identifier))
+                    (cascaded_keyword_message
+                      (keyword)
+                      (identifier))
+                    (cascaded_binary_message
+                      (binary_operator)
+                      (cascade
+                        (unary_message
+                          (identifier)
+                          (unary_identifier))
+                        (cascaded_binary_message
+                          (binary_operator)
+                          (cascade
+                            (parenthesized_expression
+                              (keyword_message
+                                (unary_message
+                                  (identifier)
+                                  (unary_identifier))
+                                (keyword)
+                                (number)))
+                            (cascaded_binary_message
+                              (binary_operator)
+                              (unary_message
+                                (identifier)
+                                (unary_identifier)))))))))))))))
+
+================================================================================
+Real example #4 - SoilBTreeTest
+================================================================================
+Class {
+	#name : #SoilBTreeTest,
+	#superclass : #TestCase,
+	#instVars : [
+		'index'
+	],
+	#category : #'Soil-Core-Tests-Index'
+}
+
+{ #category : #tests }
+SoilBTreeTest >> testRecyclePage [
+	
+	| capacityFirst offset capacity iterator counter |
+	capacityFirst := index firstPage itemCapacity.
+	1 to: capacityFirst do: [ :n | 
+		index at: n put: (n asByteArrayOfSize: 8) ].
+	self assert: index pages size equals: 3.
+	offset := capacityFirst.
+	iterator := index newIterator.
+	2 to: 6 do: [ :p | 
+		index at: offset + 1 put: ((offset + 1) asByteArrayOfSize: 8).
+		capacity := index lastPage itemCapacity.
+		offset + 2 to:  (offset + capacity) do: [:n | .
+			index at: n put: (n asByteArrayOfSize: 8) ].
+		offset := offset + capacity ].
+	self assert: index pages size equals: 13.
+	index recyclePage: (index pages at: 3).
+	self assert: index pages size equals: 13.
+	"page 3 is the recycled page"
+	self assert: index firstFreePage offset equals: 3.
+	"the page is a free page"
+	self assert: index firstFreePage class equals: SoilFreePage.
+	"after, index 3 should not be a value in any index page item"
+	index indexPages do: [ :indexPage | self assert: (indexPage items noneSatisfy: [ :item | item value == 3 ]) ].
+	"if we follow the next pointer, we find only the non-recyled data pages"
+	iterator := index newIterator.
+	counter := 0.
+	iterator pagesDo: [ :page |  counter := counter + 1].
+	"13 - 1 indexPage - 1 recycled page"
+	self assert: counter equals: 11.
+]
+
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (ston_array
+            (ston_value
+              (string))))
+        (class_header_pair
+          (ston_key)
+          (symbol
+            (string)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier)
+          (identifier))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              (unary_message
+                (identifier)
+                (unary_identifier))
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            (number)
+            (keyword)
+            (identifier)
+            (keyword)
+            (block
+              (block_argument)
+              (statement
+                (keyword_message
+                  (identifier)
+                  (keyword)
+                  (identifier)
+                  (keyword)
+                  (parenthesized_expression
+                    (keyword_message
+                      (identifier)
+                      (keyword)
+                      (number))))))))
+        (statement
+          (keyword_message
+            (self)
+            (keyword)
+            (unary_message
+              (unary_message
+                (identifier)
+                (unary_identifier))
+              (unary_identifier))
+            (keyword)
+            (number)))
+        (statement
+          (assignment
+            (identifier)
+            (identifier)))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              (identifier)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            (number)
+            (keyword)
+            (number)
+            (keyword)
+            (block
+              (block_argument)
+              (statement
+                (keyword_message
+                  (identifier)
+                  (keyword)
+                  (binary_message
+                    (identifier)
+                    (binary_operator)
+                    (number))
+                  (keyword)
+                  (parenthesized_expression
+                    (keyword_message
+                      (parenthesized_expression
+                        (binary_message
+                          (identifier)
+                          (binary_operator)
+                          (number)))
+                      (keyword)
+                      (number)))))
+              (statement
+                (assignment
+                  (identifier)
+                  (unary_message
+                    (unary_message
+                      (identifier)
+                      (unary_identifier))
+                    (unary_identifier))))
+              (statement
+                (keyword_message
+                  (binary_message
+                    (identifier)
+                    (binary_operator)
+                    (number))
+                  (keyword)
+                  (parenthesized_expression
+                    (binary_message
+                      (identifier)
+                      (binary_operator)
+                      (identifier)))
+                  (keyword)
+                  (block
+                    (block_argument)
+                    (statement
+                      (keyword_message
+                        (identifier)
+                        (keyword)
+                        (identifier)
+                        (keyword)
+                        (parenthesized_expression
+                          (keyword_message
+                            (identifier)
+                            (keyword)
+                            (number))))))))
+              (statement
+                (assignment
+                  (identifier)
+                  (binary_message
+                    (identifier)
+                    (binary_operator)
+                    (identifier)))))))
+        (statement
+          (keyword_message
+            (self)
+            (keyword)
+            (unary_message
+              (unary_message
+                (identifier)
+                (unary_identifier))
+              (unary_identifier))
+            (keyword)
+            (number)))
+        (statement
+          (keyword_message
+            (identifier)
+            (keyword)
+            (parenthesized_expression
+              (keyword_message
+                (unary_message
+                  (identifier)
+                  (unary_identifier))
+                (keyword)
+                (number)))))
+        (statement
+          (keyword_message
+            (self)
+            (keyword)
+            (unary_message
+              (unary_message
+                (identifier)
+                (unary_identifier))
+              (unary_identifier))
+            (keyword)
+            (number)))
+        (comment)
+        (statement
+          (keyword_message
+            (self)
+            (keyword)
+            (unary_message
+              (unary_message
+                (identifier)
+                (unary_identifier))
+              (unary_identifier))
+            (keyword)
+            (number)))
+        (comment)
+        (statement
+          (keyword_message
+            (self)
+            (keyword)
+            (unary_message
+              (unary_message
+                (identifier)
+                (unary_identifier))
+              (unary_identifier))
+            (keyword)
+            (identifier)))
+        (comment)
+        (statement
+          (keyword_message
+            (unary_message
+              (identifier)
+              (unary_identifier))
+            (keyword)
+            (block
+              (block_argument)
+              (statement
+                (keyword_message
+                  (self)
+                  (keyword)
+                  (parenthesized_expression
+                    (keyword_message
+                      (unary_message
+                        (identifier)
+                        (unary_identifier))
+                      (keyword)
+                      (block
+                        (block_argument)
+                        (statement
+                          (binary_message
+                            (unary_message
+                              (identifier)
+                              (unary_identifier))
+                            (binary_operator)
+                            (number)))))))))))
+        (comment)
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              (identifier)
+              (unary_identifier))))
+        (statement
+          (assignment
+            (identifier)
+            (number)))
+        (statement
+          (keyword_message
+            (identifier)
+            (keyword)
+            (block
+              (block_argument)
+              (statement
+                (assignment
+                  (identifier)
+                  (binary_message
+                    (identifier)
+                    (binary_operator)
+                    (number)))))))
+        (comment)
+        (statement
+          (keyword_message
+            (self)
+            (keyword)
+            (identifier)
+            (keyword)
+            (number)))))))
+
+================================================================================
+Real example #5 - MacOSFileLock
+================================================================================
+Class {
+	#name : #MacOSFileLock,
+	#superclass : #FFIStructure,
+	#classVars : [
+		'F_GETFL',
+		'F_GETLK',
+		'F_RDLCK',
+		'F_SETFL',
+		'F_SETLK',
+		'F_SETLKW',
+		'F_UNLCK',
+		'F_WRLCK',
+		'OFFSET_L_LEN',
+		'OFFSET_L_PID',
+		'OFFSET_L_START',
+		'OFFSET_L_TYPE',
+		'OFFSET_L_WHENCE',
+		'O_NONBLOCK',
+		'SEEK_CUR',
+		'SEEK_END',
+		'SEEK_SET',
+		'__off64_t',
+		'__pid_t'
+	],
+	#category : #'Soil-File'
+}
+
+{ #category : #'field definition' }
+MacOSFileLock class >> fieldsDesc [
+	"self rebuildFieldAccessors"
+
+	^ #(
+	__off64_t l_start;
+	__off64_t l_len;
+	__pid_t l_pid;	
+	int l_type;
+	int l_whence;
+	)
+]
+
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (ston_array
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))))
+        (class_header_pair
+          (ston_key)
+          (symbol
+            (string)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol
+              (string)))))
+      (method_header
+        (identifier)
+        (class_keyword)
+        (unary_selector
+          (unary_identifier)))
+      (comment)
+      (method_body
+        (statement
+          (return
+            (literal_array
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol)
+              (symbol))))))))
+
+================================================================================
+Real example #6 - QACIconSelectionDialog
+================================================================================
+"
+A dialog to select icons
+"
+Class {
+	#name : #QACIconSelectionDialog,
+	#superclass : #ComposableModel,
+	#instVars : [
+		'iconList',
+		'iconLibrary',
+		'addIconButton',
+		'iconReceiver',
+		'updateOnAccept'
+	],
+	#category : #'QuickAccess-Tools-UI-Dialogs'
+}
+
+{ #category : #accessing }
+QACIconSelectionDialog >> iconReceiver: anIconReceiver [
+	"The receiver of the icon when applied".
+	
+	iconReceiver := anIconReceiver  
+]
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (comment)
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (ston_array
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))
+            (ston_value
+              (string))))
+        (class_header_pair
+          (ston_key)
+          (symbol
+            (string)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (keyword_selector
+          (keyword)
+          (identifier)))
+      (comment)
+      (method_body
+        (statement
+          (assignment
+            (identifier)
+            (identifier)))))))
+
+================================================================================
+Real example #7 - PHCTUniquelyIdentified
+================================================================================
+"
+Objects that are uniquely identified
+"
+Trait {
+	#name : #PHCTUniquelyIdentified,
+	#instVars : [
+		'id'
+	],
+	#category : #'Pharo-Compendium-Core-Traits'
+}
+
+{ #category : #utilities }
+PHCTUniquelyIdentified classSide >> generateUniqueID [
+
+	^UUID new asString copyReplaceAll: '-' with: ''
+]
+
+{ #category : #comparing }
+PHCTUniquelyIdentified >> = anotherObject [
+	^anotherObject class == self class
+		and: [ anotherObject id = self id ]
+	
+]
+
+{ #category : #'private - utilities' }
+PHCTUniquelyIdentified >> generateUniqueID [
+
+	^self class generateUniqueID
+]
+
+{ #category : #comparing }
+PHCTUniquelyIdentified >> hash [
+
+	^id hash 
+]
+
+{ #category : #accessing }
+PHCTUniquelyIdentified >> id [
+	"Returns the receivers unique identifier"
+	
+	^ id ifNil: [ id := self generateUniqueID ]
+]
+
+{ #category : #accessing }
+PHCTUniquelyIdentified >> id: anObject [
+	"Sets the receivers unique identifier"
+	
+	id := anObject
+]
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (comment)
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (ston_array
+            (ston_value
+              (string))))
+        (class_header_pair
+          (ston_key)
+          (symbol
+            (string)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (class_keyword)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (statement
+          (return
+            (keyword_message
+              (unary_message
+                (unary_message
+                  (identifier)
+                  (unary_identifier))
+                (unary_identifier))
+              (keyword)
+              (string)
+              (keyword)
+              (string))))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (binary_selector
+          (binary_operator)
+          (identifier)))
+      (method_body
+        (statement
+          (return
+            (keyword_message
+              (binary_message
+                (unary_message
+                  (identifier)
+                  (unary_identifier))
+                (binary_operator)
+                (unary_message
+                  (self)
+                  (unary_identifier)))
+              (keyword)
+              (block
+                (statement
+                  (binary_message
+                    (unary_message
+                      (identifier)
+                      (unary_identifier))
+                    (binary_operator)
+                    (unary_message
+                      (self)
+                      (unary_identifier))))))))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol
+              (string)))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (statement
+          (return
+            (unary_message
+              (unary_message
+                (self)
+                (unary_identifier))
+              (unary_identifier))))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (statement
+          (return
+            (unary_message
+              (identifier)
+              (unary_identifier))))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (comment)
+      (method_body
+        (statement
+          (return
+            (keyword_message
+              (identifier)
+              (keyword)
+              (block
+                (statement
+                  (assignment
+                    (identifier)
+                    (unary_message
+                      (self)
+                      (unary_identifier))))))))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol))))
+      (method_header
+        (identifier)
+        (keyword_selector
+          (keyword)
+          (identifier)))
+      (comment)
+      (method_body
+        (statement
+          (assignment
+            (identifier)
+            (identifier)))))))
+
+================================================================================
+Real example #8 - PHCTUniquelyIdentified
+================================================================================
+"
+I'm an abstract test case for Graph behavior
+"
+Class {
+	#name : #GraphTest,
+	#superclass : #TestCase,
+	#category : #'Mole-Tests-Graph'
+}
+
+{ #category : #'tests - instance creation' }
+GraphTest >> testLabeledGraph [
+
+	| graph |
+
+	graph := self labeledGraph.
+
+	self
+		assertCollection: graph vertices hasSameElements: #(1 2 3 4);
+		assertCollection: (graph neighborsOf: 1) hasSameElements: #(2 3);
+		assertCollection: (graph neighborsOf: 2) hasSameElements: #(1);
+		assertCollection: (graph neighborsOf: 3) hasSameElements: #(1);
+		assertCollection: (graph neighborsOf: 4) hasSameElements: #(4).
+
+	self
+		assertEdgesIncidentTo: 1
+			in: graph
+			match:
+			(Dictionary new
+				at: '#(1 2)' put: 'W12';
+				at: '#(1 3)' put: 'W13';
+				yourself);
+		assertEdgesIncidentTo: 2
+			in: graph
+			match:
+			(Dictionary new
+				at: '#(1 2)' put: 'W12';
+				yourself);
+		assertEdgesIncidentTo: 3
+			in: graph
+			match:
+			(Dictionary new
+				at: '#(1 3)' put: 'W13';
+				yourself);
+		assertEdgesIncidentTo: 4
+			in: graph
+			match:
+			(Dictionary new
+				at: '#(4 4)' put: 'W44';
+				yourself)
+]
+
+{ #category : #'tests - converting' }
+GraphTest >> testNeighborsOf [
+
+	| graph |
+
+	graph := self graphWithFiveVerticesAndTwoEdges.
+
+	self
+		assert: (graph neighborsOf: 1) isEmpty;
+		assertCollection: (graph neighborsOf: 2) equals: #(3) asSet;
+		assertCollection: (graph neighborsOf: 3) equals: #(2 4) asSet;
+		assertCollection: (graph neighborsOf: 4) equals: #(3) asSet;
+		assert: (graph neighborsOf: 5) isEmpty
+]
+
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (comment)
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol
+            (string)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol
+              (string)))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              (self)
+              (unary_identifier))))
+        (statement
+          (cascade
+            (keyword_message
+              (self)
+              (keyword)
+              (unary_message
+                (identifier)
+                (unary_identifier))
+              (keyword)
+              (literal_array
+                (number)
+                (number)
+                (number)
+                (number)))
+            (cascaded_keyword_message
+              (keyword)
+              (parenthesized_expression
+                (keyword_message
+                  (identifier)
+                  (keyword)
+                  (number)))
+              (keyword)
+              (literal_array
+                (number)
+                (number)))
+            (cascaded_keyword_message
+              (keyword)
+              (parenthesized_expression
+                (keyword_message
+                  (identifier)
+                  (keyword)
+                  (number)))
+              (keyword)
+              (literal_array
+                (number)))
+            (cascaded_keyword_message
+              (keyword)
+              (parenthesized_expression
+                (keyword_message
+                  (identifier)
+                  (keyword)
+                  (number)))
+              (keyword)
+              (literal_array
+                (number)))
+            (cascaded_keyword_message
+              (keyword)
+              (parenthesized_expression
+                (keyword_message
+                  (identifier)
+                  (keyword)
+                  (number)))
+              (keyword)
+              (literal_array
+                (number)))))
+        (statement
+          (cascade
+            (keyword_message
+              (self)
+              (keyword)
+              (number)
+              (keyword)
+              (identifier)
+              (keyword)
+              (parenthesized_expression
+                (cascade
+                  (keyword_message
+                    (unary_message
+                      (identifier)
+                      (unary_identifier))
+                    (keyword)
+                    (string)
+                    (keyword)
+                    (string))
+                  (cascaded_keyword_message
+                    (keyword)
+                    (string)
+                    (keyword)
+                    (string))
+                  (cascaded_unary_message
+                    (unary_identifier)))))
+            (cascaded_keyword_message
+              (keyword)
+              (number)
+              (keyword)
+              (identifier)
+              (keyword)
+              (parenthesized_expression
+                (cascade
+                  (keyword_message
+                    (unary_message
+                      (identifier)
+                      (unary_identifier))
+                    (keyword)
+                    (string)
+                    (keyword)
+                    (string))
+                  (cascaded_unary_message
+                    (unary_identifier)))))
+            (cascaded_keyword_message
+              (keyword)
+              (number)
+              (keyword)
+              (identifier)
+              (keyword)
+              (parenthesized_expression
+                (cascade
+                  (keyword_message
+                    (unary_message
+                      (identifier)
+                      (unary_identifier))
+                    (keyword)
+                    (string)
+                    (keyword)
+                    (string))
+                  (cascaded_unary_message
+                    (unary_identifier)))))
+            (cascaded_keyword_message
+              (keyword)
+              (number)
+              (keyword)
+              (identifier)
+              (keyword)
+              (parenthesized_expression
+                (cascade
+                  (keyword_message
+                    (unary_message
+                      (identifier)
+                      (unary_identifier))
+                    (keyword)
+                    (string)
+                    (keyword)
+                    (string))
+                  (cascaded_unary_message
+                    (unary_identifier)))))))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol
+              (string)))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              (self)
+              (unary_identifier))))
+        (statement
+          (cascade
+            (keyword_message
+              (self)
+              (keyword)
+              (unary_message
+                (parenthesized_expression
+                  (keyword_message
+                    (identifier)
+                    (keyword)
+                    (number)))
+                (unary_identifier)))
+            (cascaded_keyword_message
+              (keyword)
+              (parenthesized_expression
+                (keyword_message
+                  (identifier)
+                  (keyword)
+                  (number)))
+              (keyword)
+              (unary_message
+                (literal_array
+                  (number))
+                (unary_identifier)))
+            (cascaded_keyword_message
+              (keyword)
+              (parenthesized_expression
+                (keyword_message
+                  (identifier)
+                  (keyword)
+                  (number)))
+              (keyword)
+              (unary_message
+                (literal_array
+                  (number)
+                  (number))
+                (unary_identifier)))
+            (cascaded_keyword_message
+              (keyword)
+              (parenthesized_expression
+                (keyword_message
+                  (identifier)
+                  (keyword)
+                  (number)))
+              (keyword)
+              (unary_message
+                (literal_array
+                  (number))
+                (unary_identifier)))
+            (cascaded_keyword_message
+              (keyword)
+              (unary_message
+                (parenthesized_expression
+                  (keyword_message
+                    (identifier)
+                    (keyword)
+                    (number)))
+                (unary_identifier)))))))))
+
+================================================================================
+Real example #9 - DirectedGraphTest
+================================================================================
+"
+I'm a test case for DirectedGraph
+"
+Class {
+	#name : #DirectedGraphTest,
+	#superclass : #GraphTest,
+	#category : #'Mole-Tests-Graph'
+}
+
+{ #category : #'tests - topological sort' }
+DirectedGraphTest >> testTopologicalSort [
+
+	| graph topologicalOrder validTopologicalOrders |
+
+	graph := self graphBuilder
+		addVertex: 1;
+		connect: 2 to: 3;
+		connect: 3 to: 4;
+		connect: 3 to: 6;
+		buildDirected..
+
+	topologicalOrder := graph topologicalSort.
+	self assert: topologicalOrder size equals: 5.
+
+	validTopologicalOrders := {#(1 2 3 4 6). #(1 2 3 6 4). 	#(2 3 4 6 1). #(2 3 6 4 1)}.
+
+	self assert: (validTopologicalOrders includes: topologicalOrder)
+]
+
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (comment)
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol
+            (string)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol
+              (string)))))
+      (method_header
+        (identifier)
+        (unary_selector
+          (unary_identifier)))
+      (method_body
+        (temporaries
+          (identifier)
+          (identifier)
+          (identifier))
+        (statement
+          (assignment
+            (identifier)
+            (cascade
+              (keyword_message
+                (unary_message
+                  (self)
+                  (unary_identifier))
+                (keyword)
+                (number))
+              (cascaded_keyword_message
+                (keyword)
+                (number)
+                (keyword)
+                (number))
+              (cascaded_keyword_message
+                (keyword)
+                (number)
+                (keyword)
+                (number))
+              (cascaded_keyword_message
+                (keyword)
+                (number)
+                (keyword)
+                (number))
+              (cascaded_unary_message
+                (unary_identifier)))))
+        (statement
+          (assignment
+            (identifier)
+            (unary_message
+              (identifier)
+              (unary_identifier))))
+        (statement
+          (keyword_message
+            (self)
+            (keyword)
+            (unary_message
+              (identifier)
+              (unary_identifier))
+            (keyword)
+            (number)))
+        (statement
+          (assignment
+            (identifier)
+            (dynamic_array
+              (literal_array
+                (number)
+                (number)
+                (number)
+                (number)
+                (number))
+              (literal_array
+                (number)
+                (number)
+                (number)
+                (number)
+                (number))
+              (literal_array
+                (number)
+                (number)
+                (number)
+                (number)
+                (number))
+              (literal_array
+                (number)
+                (number)
+                (number)
+                (number)
+                (number)))))
+        (statement
+          (keyword_message
+            (self)
+            (keyword)
+            (parenthesized_expression
+              (keyword_message
+                (identifier)
+                (keyword)
+                (identifier)))))))))
+
+================================================================================
+Real example #10 - ProtoObject
+================================================================================
+Class {
+	#name : #ProtoObject,
+	#superclass : nil,
+	#category : #'Kernel-Objects'
+}
+
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (nil))
+        (class_header_pair
+          (ston_key)
+          (symbol
+            (string)))))))
+
+================================================================================
+Real example #11 - VMBSPLeaf
+================================================================================
+Class {
+	#name : #VMBSPLeaf,
+	#superclass : #VMBSPBase,
+	#instVars : [
+		'sector'
+	],
+	#category : #'PolySLAM-Core-Nearest Neighbor Search'
+}
+
+{ #category : #'as yet unclassified' }
+VMBSPLeaf >> handDownVectors: aPolygon. [
+	"all obstacles and sectors are 'inserted' into the sector, so that dominant vector types can
+	merge into the sector. for example, a frontier in the sector polygon can overlap with an obstacle
+	from 'aPolygon', causing the frontier to turn into an obstacle. partial overlaps result into
+	vectors being split into smaller vectors before type merging."
+	aPolygon select: [ :v | v isObstacle or: [v isSector]] thenDo: [ :v | self insertVector: v ].
+
+]
+
+--------------------------------------------------------------------------------
+(source
+  (source_file
+    (class_definition
+      (type)
+      (class_header
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (symbol))
+        (class_header_pair
+          (ston_key)
+          (ston_array
+            (ston_value
+              (string))))
+        (class_header_pair
+          (ston_key)
+          (symbol
+            (string)))))
+    (method_definition
+      (method_metadata
+        (method_metadata_object
+          (method_metadata_pair
+            (ston_key)
+            (symbol
+              (string)))))
+      (method_header
+        (identifier)
+        (keyword_selector
+          (keyword)
+          (identifier)))
+      (comment)
+      (method_body
+        (statement
+          (keyword_message
+            (identifier)
+            (keyword)
+            (block
+              (block_argument)
+              (statement
+                (keyword_message
+                  (unary_message
+                    (identifier)
+                    (unary_identifier))
+                  (keyword)
+                  (block
+                    (statement
+                      (unary_message
+                        (identifier)
+                        (unary_identifier)))))))
+            (keyword)
+            (block
+              (block_argument)
+              (statement
+                (keyword_message
+                  (self)
+                  (keyword)
+                  (identifier))))))))))
+
+================================================================================
+Real example #12 - PSQLGrammarTest
+================================================================================
+Class {
+	#name : #PSQLGrammarTest,
+	#superclass : #PPCompositeParserTest,
+	#category : 'PostgreSQL-Experiments'
+}
+
+{ #category : #tests-accessing }
+PSQLGrammarTest >> testAggregateExpression [
+	self
+		parse: 'array_agg(a ORDER BY b DESC)' rule: #expression;
+		parse: 'string_agg(a, '','' ORDER BY a)' rule: #expression;
+		parse: 'string_agg(a ORDER BY a, '','')' rule: #expression
+]
+--------------------------------------------------------------------------------
+(source
+      (source_file
+        (class_definition
+          (type)
+          (class_header
+            (class_header_pair
+              (ston_key)
+              (symbol))
+            (class_header_pair
+              (ston_key)
+              (symbol))
+            (class_header_pair
+              (ston_key)
+              (string))))
+        (method_definition
+          (method_metadata
+            (method_metadata_object
+              (method_metadata_pair
+                (ston_key)
+                (dashed_symbol))))
+          (method_header
+            (identifier)
+            (unary_selector
+              (unary_identifier)))
+          (method_body
+            (statement
+              (cascade
+                (keyword_message
+                  (self)
+                  (keyword)
+                  (string)
+                  (keyword)
+                  (symbol))
+                (cascaded_keyword_message
+                  (keyword)
+                  (string)
+                  (keyword)
+                  (symbol))
+                (cascaded_keyword_message
+                  (keyword)
+                  (string)
+                  (keyword)
+                  (symbol))))))))

@@ -1,0 +1,142 @@
+=================
+One statement
+=================
+test: abc
+
+    hello
+---
+
+(source
+  (method
+    (keyword_selector (keyword) (identifier))
+    (method_body
+      (statement (identifier)))))
+
+=================
+Multiple statements
+=================
+test: abc
+
+    hello.
+    abc.
+    def
+---
+
+(source
+  (method
+    (keyword_selector (keyword) (identifier))
+    (method_body
+      (statement (identifier))
+      (statement (identifier))
+      (statement (identifier)))))
+
+=================
+Multiple statements trailing dot
+=================
+test: abc
+
+    hello.
+    abc.
+    def.
+---
+
+(source
+  (method
+    (keyword_selector (keyword) (identifier))
+    (method_body
+      (statement (identifier))
+      (statement (identifier))
+      (statement (identifier)))))
+
+=================
+Multiple trailing dots
+=================
+test: abc
+
+    hello.
+    abc..
+    def...
+---
+
+(source
+  (method
+    (keyword_selector (keyword) (identifier))
+    (method_body
+      (statement (identifier))
+      (statement (identifier))
+      (statement (identifier)))))
+
+=================
+With temporaries
+=================
+test: abc
+
+    | a b |
+    hello.
+    abc..
+    def...
+---
+
+(source
+  (method
+    (keyword_selector (keyword) (identifier))
+    (method_body
+      (temporaries (identifier) (identifier))
+      (statement (identifier))
+      (statement (identifier))
+      (statement (identifier)))))
+
+=================
+With empty temporaries
+=================
+test: abc
+
+    | |
+    hello.
+    abc..
+    def...
+---
+
+(source
+  (method
+    (keyword_selector (keyword) (identifier))
+    (method_body
+      (temporaries)
+      (statement (identifier))
+      (statement (identifier))
+      (statement (identifier)))))
+
+=================
+With Return
+=================
+test: abc
+
+    | |
+    hello.
+    abc..
+    ^ def
+---
+
+(source
+  (method
+    (keyword_selector (keyword) (identifier))
+    (method_body
+      (temporaries)
+      (statement (identifier))
+      (statement (identifier))
+      (statement (return (identifier))))))
+
+=================
+Dots after selector
+=================
+test: abc ...
+    ^1
+---
+
+(source
+  (method
+    (keyword_selector (keyword) (identifier))
+    (method_body
+      (statement
+        (return
+          (number))))))
