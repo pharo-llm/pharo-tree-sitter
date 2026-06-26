@@ -1,4 +1,4 @@
-name: Publish to GitHub Packages
+name: Publish to PyPI
 
 on:
   workflow_dispatch:
@@ -6,13 +6,12 @@ on:
     tags:
       - "v*.*.*"
 
-permissions:
-  contents: read
-  packages: write
-
 jobs:
-  publish-github-packages:
+  publish-pypi:
     runs-on: macos-14
+    permissions:
+      contents: read
+      id-token: write
 
     steps:
       - uses: actions/checkout@v4
@@ -28,11 +27,5 @@ jobs:
           python -m build
           python -m twine check dist/*
 
-      - name: Publish to GitHub Packages
-        env:
-          TWINE_USERNAME: ${{ github.actor }}
-          TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python -m twine upload \
-            --repository-url https://upload.pypi.pkg.github.com/pharo-llm/ \
-            dist/*
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
